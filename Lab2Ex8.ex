@@ -20,5 +20,8 @@ end
 
 
 IO.write("Въведете цяло трицифрено число: ")
-num = IO.gets("") |> String.trim() |> String.to_integer()
+num =
+  IO.gets("")
+  |> String.trim()
+  |> String.to_integer()
 IO.puts Check.sum(num)
